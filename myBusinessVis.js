@@ -37,7 +37,7 @@ function visualizeBusinesses() {
 
 olms(
     'map',
-    'https://api.maptiler.com/maps/topo/style.json?key=Get your own API key at https://www.maptiler.com/cloud/'
+    'https://api.maptiler.com/maps/topo/style.json?key=' + apiKey
 ).then($.proxy(function(map) {
     this.map = map;
     map.addControl(new ol.control.FullScreen());

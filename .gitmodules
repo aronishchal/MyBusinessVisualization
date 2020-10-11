@@ -1,0 +1,3 @@
+[submodule "MyBusinessService"]
+	path = MyBusinessService
+	url = https://github.com/aronishchal/MyBusinessService

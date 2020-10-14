@@ -2,7 +2,7 @@
 Simple Javascript webapp to visualize data points on a map 
 
 <h2>Introduction</h2>
-This is a simple Javascript webapp to visualize Business Entities on a map which with a name and address - built using JQuery and Openlayers.
+This is a simple Javascript webapp to visualize Business Entities on a map with a name and address - built using JQuery and Openlayers.
 
 <h2>Prerequisites</h2>
 The Business Service is required to be running for this webapp - https://github.com/aronishchal/MyBusinessService. Business Entities to be visualized can be added as per the README there.

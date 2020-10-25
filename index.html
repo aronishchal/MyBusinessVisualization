@@ -8,6 +8,42 @@
          height: 90%;
          width: 100%;
          }
+        
+         .ol-popup {
+         position: absolute;
+         background-color: white;
+         box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+         padding: 15px;
+         border-radius: 10px;
+         border: 1px solid #cccccc;
+         bottom: 12px;
+         left: -50px;
+         min-width: 230px;
+         }
+         
+         .ol-popup:after, .ol-popup:before {
+         top: 100%;
+         border: solid transparent;
+         content: " ";
+         height: 0;
+         width: 0;
+         position: absolute;
+         pointer-events: none;
+         }
+         
+         .ol-popup:after {
+         border-top-color: white;
+         border-width: 10px;
+         left: 48px;
+         margin-left: -10px;
+         }
+        
+         .ol-popup:before {
+         border-top-color: #cccccc;
+         border-width: 11px;
+         left: 48px;
+         margin-left: -11px;
+         }
       </style>
       <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
       <script src="https://unpkg.com/ol-mapbox-style@6.1.4/dist/olms.js"></script>
@@ -15,9 +51,12 @@
    </head>
    <body>
       <div style="height: 50px; font-size: 25px; font-family: 'Helvetica'; font-weight: bold; color:#0D4D93; margin-top: 20px;">
-      	<img src="./data/icon.png" style="height: 30px; width: 30px; vertical-align: middle; margin-bottom: 5px; margin-right: 10px"/> My Business Locations
+         <img src="./data/icon.png" style="height: 30px; width: 30px; vertical-align: middle; margin-bottom: 5px; margin-right: 10px"/> My Business Locations
       </div>
       <div id="map" class="map"></div>
+      <div id="popup" class="ol-popup">
+         <div id="popup-content"></div>
+      </div>
       <script
          src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>var apiKey = 'insert_your_key_here'</script>
